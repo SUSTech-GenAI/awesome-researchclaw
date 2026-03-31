@@ -8,55 +8,74 @@ ResearchClaw is an emerging ecosystem of AI-powered research assistants, autonom
 
 ## Contents
 
-- [Core Projects](#core-projects)
-- [Autonomous Research Pipelines](#autonomous-research-pipelines)
-- [Research Assistants & Workflow Tools](#research-assistants--workflow-tools)
-- [OpenClaw Ecosystem](#openclaw-ecosystem)
+- [OpenClaw Ecosystem & Research Tools](#openclaw-ecosystem--research-tools)
+- [Research Agents & AI Scientists](#research-agents--ai-scientists)
+- [Deep Research & Frameworks](#deep-research--frameworks)
 - [Skills & Plugins](#skills--plugins)
 - [Community & Learning](#community--learning)
 - [Related Awesome Lists](#related-awesome-lists)
 
 ---
 
-## Core Projects
+> **Capability columns:** I = Idea generation · Fig = Figure / visualization · Write = Writing / drafting · Exp = Experiment / execution · R = Review / rebuttal
+> ✓ = Explicitly supported · △ = Indirect / framework capability · — = Not mentioned
 
-The foundational projects in the ResearchClaw ecosystem.
+## OpenClaw Ecosystem & Research Tools
 
-- [ResearchClaw](https://github.com/ymx10086/ResearchClaw) — Local-first Research OS: paper management, literature search, experiment tracking, multi-agent collaboration, Overleaf sync, and multi-channel access (CLI / Web UI / Telegram / Feishu / QQ / DingTalk).
-- [AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) — Fully autonomous 23-stage research pipeline. Chat an idea, get a conference-ready paper with real citations, sandbox experiments, and multi-agent peer review. ⭐ 9.6k+
-- [Research Claw (nanoAgentTeam)](https://github.com/nanoAgentTeam/research-claw) — Self-hosted AI research assistant with Overleaf sync, multi-agent collaboration, literature search, and multi-channel (Telegram, Feishu, QQ, DingTalk) support.
+Projects directly related to the OpenClaw ecosystem — core platforms, skill libraries, plugins, and curated lists.
 
-## Autonomous Research Pipelines
+| # | Project | Owner | ⭐ Stars | I | Fig | Write | Exp | R | Description |
+|---|---------|-------|---------|---|-----|-------|-----|---|-------------|
+| 1 | [AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) | aiming-lab | 9.7k | △ | ✓ | ✓ | ✓ | ✓ | 23-stage idea → paper pipeline with auto LaTeX, citation verification, experiments, figures, and multi-agent peer review. |
+| 2 | [ResearchClaw](https://github.com/ymx10086/ResearchClaw) | ymx10086 | 230 | — | △ | ✓ | ✓ | — | Local-first Research OS with claims/evidence graph, experiment tracking, paper management, skills, and multi-channel access. |
+| 3 | [Research Claw](https://github.com/nanoAgentTeam/research-claw) | nanoAgentTeam | 61 | — | — | ✓ | — | — | Self-hosted academic assistant — paper management, literature search, deadline tracking, and LaTeX/Overleaf sync. |
+| 4 | [Prismer](https://github.com/Prismer-AI/Prismer) | Prismer-AI | 1k | — | △ | ✓ | ✓ | △ | End-to-end research platform with PDF reading, Jupyter, LaTeX, code execution, and citation verification. |
+| 5 | [LabClaw](https://github.com/wu-yc/LabClaw) | wu-yc | 900 | — | ✓ | ✓ | ✓ | — | 240 OpenClaw skills for biology, pharmacology, medicine, literature, and visualization. |
+| 6 | [PaperClaw](https://github.com/meowscles69/PaperClaw) | meowscles69 | 152 | △ | — | ✓ | — | — | 27 skills for academic teams — literature reviews, hypothesis versioning, grant writing, and knowledge handoffs. |
+| 7 | [scholar-skill](https://github.com/EESJGong/scholar-skill) | EESJGong | 114 | — | — | — | — | — | OpenClaw skill for academic reading, knowledge linking, reflection, and Obsidian knowledge evolution. |
+| 8 | [openclaw-paper-tools](https://github.com/henry-y/openclaw-paper-tools) | henry-y | 83 | — | — | — | — | — | Auto-fetches HF Daily Papers and one-click deep reading via SwiftScholar. |
+| 9 | [Awesome Claws](https://github.com/LHL3341/awesome-claws) | LHL3341 | 32 | — | — | — | — | — | Curated index of OpenClaw-related products, skills, communities, and ecosystem resources. |
+| 10 | [awesome-autoresearch](https://github.com/alvinunreal/awesome-autoresearch) | alvinunreal | 1.1k | — | — | — | — | — | High-signal index of Karpathy autoresearch forks, research agents, and benchmarks. |
+| 11 | [Scientify](https://github.com/tsingyuai/scientify) | tsingyuai | 138 | ✓ | △ | ✓ | ✓ | — | "Continuous metabolism" research system — tracks papers, evolves hypotheses, runs validation, and pushes updates proactively. |
+| 12 | [OpenClaw-RL](https://github.com/Gen-Verse/OpenClaw-RL) | Gen-Verse | 4.4k | — | — | — | ✓ | — | Turns daily conversations into training signal; async reinforcement learning to personalize OpenClaw or any agent. |
+| 13 | [ClawTeam-OpenClaw](https://github.com/win4r/ClawTeam-OpenClaw) | win4r | 928 | — | — | — | △ | — | ClawTeam's deep-adapted OpenClaw fork — swarm coordination, worktree isolation, and tmux multi-agent management. |
+| 14 | [x-research-skill](https://github.com/rohunvora/x-research-skill) | rohunvora | 1k | — | — | △ | — | — | Wraps X/Twitter as a terminal research tool — search, thread following, monitoring, and sourced briefings. |
+| 15 | [openclaw-agents](https://github.com/shenhao-stu/openclaw-agents) | shenhao-stu | 351 | ✓ | — | ✓ | △ | ✓ | One-command setup for 9 specialized agents with Paper Pipeline, Brainstorm, Daily Digest, and Rebuttal built in. |
+| 16 | [MemOS-Cloud-OpenClaw-Plugin](https://github.com/MemTensor/MemOS-Cloud-OpenClaw-Plugin) | MemTensor | 337 | — | — | — | — | — | Official MemOS Cloud lifecycle plugin — recall before run, write back to long-term memory after run. |
+| 17 | [openclaw-engram](https://github.com/joshuaswarren/openclaw-engram) | joshuaswarren | 37 | — | — | — | — | — | Local-first long-term memory layer for agents — markdown storage, hybrid retrieval, cross-session research context. |
+| 18 | [SkillNet](https://github.com/zjunlp/SkillNet) | ZJUNLP | 625 | — | — | — | — | — | Skill creation, evaluation, connection, and discovery infrastructure — searches 300k+ community skills. |
+| 19 | [OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | FreedomIntelligence | 1.8k | — | △ | △ | △ | — | 869 medical/biomedical skills spanning clinical, genomics, and drug discovery domains. |
+| 20 | [ARIS](https://github.com/zhangchenhaobest/Auto-claude-code-research-in-sleep) | zhangchenhaobest | 0 | ✓ | △ | ✓ | ✓ | ✓ | Lightweight Markdown-only research workflow — cross-model review loops, idea discovery, and experiment automation. |
 
-End-to-end systems that automate the research process from idea to paper.
+## Research Agents & AI Scientists
 
-- [AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) — 23-stage pipeline: idea → literature survey → hypothesis → experiments → paper → peer review. Supports OpenClaw, Claude Code, ACP agents.
-- [AI Scientist](https://github.com/SakanaAI/AI-Scientist) — Sakana AI's automated research pioneer; full-cycle scientific discovery agent.
-- [AutoResearch](https://github.com/karpathy/autoresearch) — Andrej Karpathy's end-to-end research automation framework.
-- [FARS](https://analemma.ai/blog/introducing-fars/) — Fully Automated Research System by Analemma.
-- [Auto-claude-code-research-in-sleep (ARIS)](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) — Lightweight Markdown-only skills for autonomous ML research: cross-model review loops, idea discovery, experiment automation.
-- [Scientify](https://github.com/tsingyuai/scientify) — OpenClaw-native research automation plugin with 6-phase pipeline: literature survey → deep analysis → implementation plan → code generation → automated review → experiments.
-- [ScienceClaw](https://github.com/Zaoqu-Liu/ScienceClaw) — OpenClaw-based AI research team / scientific workflow assistant.
+General-purpose autonomous research agents, AI scientist systems, and research benchmarks.
 
-## Research Assistants & Workflow Tools
+| # | Project | Owner | ⭐ Stars | I | Fig | Write | Exp | R | Description |
+|---|---------|-------|---------|---|-----|-------|-----|---|-------------|
+| 21 | [AgentLaboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) | SamuelSchmidgall | 5.5k | △ | — | ✓ | ✓ | — | End-to-end autonomous research workflow — turns your research ideas into complete experiments and papers. |
+| 22 | [AI-Researcher](https://github.com/HKUDS/AI-Researcher) | HKUDS | 5k | ✓ | — | ✓ | ✓ | — | Autonomous Scientific Innovation with dedicated `research_agent` and `paper_agent` modules. |
+| 23 | [AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) | SakanaAI | 4.1k | ✓ | — | △ | ✓ | — | Workshop-level automated scientific discovery via agentic tree search. |
+| 24 | [OmniScientist](https://github.com/tsinghua-fib-lab/OmniScientist) | Tsinghua FIB Lab | 102 | ✓ | — | ✓ | ✓ | — | AI Scientist ecosystem covering idea generation, experiment design, and paper writing as a holistic blueprint. |
+| 25 | [LLM-MM-Agent](https://github.com/usail-hkust/LLM-MM-Agent) | HKUST | 499 | — | ✓ | ✓ | ✓ | — | Mathematical modeling agent — problem analysis, modeling, code solving, visualization, and report generation. |
+| 26 | [Virtual-Scientists](https://github.com/InternScience/Virtual-Scientists) | InternScience | 129 | ✓ | — | — | — | — | ACL 2025 project — many-heads multi-agent scientific idea generation. |
+| 27 | [MLGym](https://github.com/facebookresearch/MLGym) | Meta FAIR | 593 | — | — | — | — | — | Unified framework and benchmark for AI research agents. |
+| 28 | [aira-dojo](https://github.com/facebookresearch/aira-dojo) | Meta FAIR | 136 | — | — | — | △ | — | Extensible AI research agent development and evaluation framework with isolated code execution. |
+| 29 | [AIRS-Bench](https://github.com/facebookresearch/airs-bench) | Meta FAIR | 71 | — | — | — | — | — | Benchmark for quantifying end-to-end AI research abilities of LLM agents. |
+| 30 | [DeepResearch Bench](https://github.com/Ayanami0730/deep_research_bench) | Ayanami0730 | 651 | — | — | — | — | — | Comprehensive benchmark and leaderboard for deep research agents. |
 
-Interactive assistants and tools that help researchers throughout their workflow.
+## Deep Research & Frameworks
 
-- [ResearchClaw](https://github.com/ymx10086/ResearchClaw) — Full research OS with claim/evidence graph, experiment tracking, workflow stages, and project dashboards.
-- [Elicit](https://elicit.com/) — AI research assistant; automates literature reviews, systematic reviews, data extraction.
-- [Consensus](https://consensus.app/) — AI search engine that finds insights directly from research papers.
-- [ResearchRabbit](https://www.researchrabbit.ai/) — "Spotify for research" — collection-based paper discovery with AI recommendations.
+Deep research agents and foundational frameworks for agent-driven scientific exploration.
 
-## OpenClaw Ecosystem
-
-Projects and tools in the broader OpenClaw ecosystem that complement ResearchClaw.
-
-- [OpenClaw](https://github.com/openclaw/openclaw) — The AI gateway / personal assistant platform that ResearchClaw integrates with.
-- [Awesome Claws](https://github.com/LHL3341/awesome-claws) — Curated list of OpenClaw-related products, skills, communities, and ecosystem resources.
-- [MetaClaw](https://pypi.org/project/metaclaw/) — Self-learning skill system; AutoResearchClaw uses it to learn from past runs and improve future pipeline quality.
-- [ACPX](https://github.com/openclaw/acpx) — Agent Client Protocol — enables AutoResearchClaw to use any ACP-compatible agent (Claude, Codex, Copilot, Gemini, etc.) as its LLM backend.
-- [MimicLaw](https://github.com/memovai/mimiclaw) — Compact assistant project in the Claw ecosystem.
-- [EverMemOS](https://github.com/EverMind-AI/EverMemOS) — Long-term memory OS for 24/7 OpenClaw agents; includes OpenClaw plugin and Live2D integration.
+| # | Project | Owner | ⭐ Stars | I | Fig | Write | Exp | R | Description |
+|---|---------|-------|---------|---|-----|-------|-----|---|-------------|
+| 31 | [open_deep_research](https://github.com/langchain-ai/open_deep_research) | LangChain | 11k | — | — | ✓ | — | — | Fully open-source deep research agent — multi-model, multi-search API, MCP support, and built-in report generation. |
+| 32 | [DeepResearch](https://github.com/Alibaba-NLP/DeepResearch) | Alibaba-NLP | 18.6k | — | — | △ | — | — | Tongyi Deep Research — the highest-starred open-source deep research agent in this list. |
+| 33 | [MiroThinker](https://github.com/MiroMindAI/MiroThinker) | MiroMindAI | 8.4k | — | — | △ | — | — | Deep research agent for complex research and prediction tasks; top BrowseComp scores (74.0 / 88.2). |
+| 34 | [MiroFlow](https://github.com/MiroMindAI/miroflow) | MiroMindAI | 2.9k | — | — | — | — | — | Performance-first open-source agent framework — #1 on 5+ benchmarks, supports MiroThinker, Claude, Kimi, OpenAI. |
+| 35 | [CognitiveKernel-Pro](https://github.com/Tencent/CognitiveKernel-Pro) | Tencent AI Lab | 505 | — | — | — | △ | — | Tencent's deep research agent framework with agent foundation model training. |
+| 36 | [Simply](https://github.com/google-deepmind/simply) | Google DeepMind | 511 | ✓ | — | — | ✓ | — | Minimal JAX research codebase — designed for agents to read code, propose ideas, run experiments, and iterate. |
 
 ## Skills & Plugins
 

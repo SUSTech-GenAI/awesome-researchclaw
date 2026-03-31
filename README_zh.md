@@ -8,55 +8,73 @@ ResearchClaw 是一个新兴的 AI 科研助手生态系统，涵盖自主论文
 
 ## 目录
 
-- [核心项目](#核心项目)
-- [自主科研流水线](#自主科研流水线)
-- [科研助手与工作流工具](#科研助手与工作流工具)
-- [OpenClaw 生态](#openclaw-生态)
+- [项目对比矩阵](#项目对比矩阵)
+  - [OpenClaw 生态与科研工具](#openclaw-生态与科研工具)
+  - [通用 Research Agent / AI Scientist](#通用-research-agent--ai-scientist)
+  - [Deep Research 与框架](#deep-research-与框架)
 - [技能与插件](#技能与插件)
 - [社区与学习](#社区与学习)
 - [相关 Awesome 列表](#相关-awesome-列表)
 
 ---
 
-## 核心项目
+## 项目对比矩阵
 
-ResearchClaw 生态的基础项目。
+> **能力列说明：** I = 想法生成 · 图 = 绘图/可视化 · 写 = 写作/成稿 · 实验 = 自动实验/执行 · R = 审稿/rebuttal
+> ✓ = README 明确支持 · △ = 间接支持/框架能力 · — = 未见明确说明
 
-- [ResearchClaw](https://github.com/ymx10086/ResearchClaw) — 本地优先的 Research OS：论文管理、文献检索、实验追踪、多 Agent 协作、Overleaf 同步、多渠道接入（CLI / Web UI / Telegram / 飞书 / QQ / 钉钉）。
-- [AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) — 全自动 23 阶段科研流水线。输入一个想法，输出会议级论文——含真实引用、沙箱实验、多 Agent 同行评审。⭐ 9.6k+
-- [Research Claw (nanoAgentTeam)](https://github.com/nanoAgentTeam/research-claw) — 自托管 AI 科研助手，支持 Overleaf 同步、多 Agent 协作、文献检索、多渠道交互（Telegram、飞书、QQ、钉钉）。
+### OpenClaw 生态与科研工具
 
-## 自主科研流水线
+| 项目 | 所有者 | ⭐ Stars | I | 图 | 写 | 实验 | R | 简述 |
+|------|-------|---------|---|---|---|-----|---|------|
+| [AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) | aiming-lab | 9.7k | △ | ✓ | ✓ | ✓ | ✓ | 23 阶段 idea→paper，自动出 LaTeX、引用校验、实验结果和图表，还有多 agent 审稿。 |
+| [ResearchClaw](https://github.com/ymx10086/ResearchClaw) | ymx10086 | 230 | — | △ | ✓ | ✓ | — | 本地优先的科研操作系统，带 claims/evidence、experiment tracking、papers、skills、channels。 |
+| [research-claw](https://github.com/nanoAgentTeam/research-claw) | nanoAgentTeam | 61 | — | — | ✓ | — | — | 自托管学术助手，管论文、搜文献、跟 deadline、维护 LaTeX/Overleaf。 |
+| [Prismer](https://github.com/Prismer-AI/Prismer) | Prismer-AI | 1k | — | △ | ✓ | ✓ | △ | 从读论文到发论文的研究平台，带 PDF 阅读、Jupyter、LaTeX、代码执行和 citation verification。 |
+| [LabClaw](https://github.com/wu-yc/LabClaw) | wu-yc | 900 | — | ✓ | ✓ | ✓ | — | 240 个面向生物、药物、医学、文献和可视化的 OpenClaw 技能包。 |
+| [PaperClaw](https://github.com/meowscles69/PaperClaw) | meowscles69 | 152 | △ | — | ✓ | — | — | 面向学术团队的 27 个技能，偏综述、假设版本管理、grant writing 和知识交接。 |
+| [scholar-skill](https://github.com/EESJGong/scholar-skill) | EESJGong | 114 | — | — | — | — | — | 面向学术阅读、知识链接、反思与 Obsidian 知识演化的 OpenClaw skill。 |
+| [openclaw-paper-tools](https://github.com/henry-y/openclaw-paper-tools) | henry-y | 83 | — | — | — | — | — | 自动抓 HF Daily Papers，并一键送去 SwiftScholar 做深读。 |
+| [awesome-claws](https://github.com/LHL3341/awesome-claws) | LHL3341 | 32 | — | — | — | — | — | OpenClaw 相关产品、skills、社区和生态资源的导航索引。 |
+| [awesome-autoresearch](https://github.com/alvinunreal/awesome-autoresearch) | alvinunreal | 1.1k | — | — | — | — | — | Karpathy autoresearch 系分支、research agents、benchmarks 的高信号索引。 |
+| [scientify](https://github.com/tsingyuai/scientify) | tsingyuai | 138 | ✓ | △ | ✓ | ✓ | — | 强调"持续新陈代谢"的科研系统，持续跟论文、进化假设、跑验证并主动推送。 |
+| [OpenClaw-RL](https://github.com/Gen-Verse/OpenClaw-RL) | Gen-Verse | 4.4k | — | — | — | ✓ | — | 把日常对话变成训练信号，异步强化学习个性化 OpenClaw 或通用 agent。 |
+| [ClawTeam-OpenClaw](https://github.com/win4r/ClawTeam-OpenClaw) | win4r | 928 | — | — | — | △ | — | ClawTeam 的 OpenClaw 深度适配 fork，主打 swarm 协作、worktree 和 tmux 隔离。 |
+| [x-research-skill](https://github.com/rohunvora/x-research-skill) | rohunvora | 1k | — | — | △ | — | — | 把 X/Twitter 包成终端研究工具，支持 search、thread follow、monitor 和 briefings。 |
+| [openclaw-agents](https://github.com/shenhao-stu/openclaw-agents) | shenhao-stu | 351 | ✓ | — | ✓ | △ | ✓ | 一键起 9 个专职 agent，内置 Paper Pipeline、Brainstorm、Daily Digest、Rebuttal。 |
+| [MemOS-Cloud-OpenClaw-Plugin](https://github.com/MemTensor/MemOS-Cloud-OpenClaw-Plugin) | MemTensor | 337 | — | — | — | — | — | 官方 MemOS Cloud 生命周期插件，run 前 recall，run 后写回长期记忆。 |
+| [openclaw-engram](https://github.com/joshuaswarren/openclaw-engram) | joshuaswarren | 37 | — | — | — | — | — | 本地优先的 agent 长期记忆层，markdown 存储，混合检索，跨会话保留研究上下文。 |
+| [SkillNet](https://github.com/zjunlp/SkillNet) | ZJUNLP | 625 | — | — | — | — | — | 做 skill 的创建、评估、连接和发现，号称可搜 30 万+ community skills。 |
+| [OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) | FreedomIntelligence | 1.8k | — | △ | △ | △ | — | 869 个医学/生物医药技能，把通用 agent 往 clinical、genomics、drug discovery 拉。 |
+| [Auto-claude-code-research-in-sleep](https://github.com/zhangchenhaobest/Auto-claude-code-research-in-sleep) | zhangchenhaobest | 0 | ✓ | △ | ✓ | ✓ | ✓ | ARIS：纯 Markdown 的轻量研究工作流，主打 cross-model review、idea discovery、experiment automation。 |
 
-端到端自动化科研系统——从想法到论文。
+### 通用 Research Agent / AI Scientist
 
-- [AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) — 23 阶段流水线：想法 → 文献综述 → 假设 → 实验 → 论文 → 同行评审。支持 OpenClaw、Claude Code、ACP 代理。
-- [AI Scientist](https://github.com/SakanaAI/AI-Scientist) — Sakana AI 的自动化科研先驱；全周期科学发现 Agent。
-- [AutoResearch](https://github.com/karpathy/autoresearch) — Andrej Karpathy 的端到端科研自动化框架。
-- [FARS](https://analemma.ai/blog/introducing-fars/) — Analemma 的全自动科研系统。
-- [Auto-claude-code-research-in-sleep (ARIS)](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) — 轻量级纯 Markdown 技能，用于自主 ML 研究：跨模型审阅循环、想法发现、实验自动化。
-- [Scientify](https://github.com/tsingyuai/scientify) — OpenClaw 原生科研自动化插件，6 阶段流水线：文献综述 → 深度分析 → 实施计划 → 代码生成 → 自动审阅 → 实验。
-- [ScienceClaw](https://github.com/Zaoqu-Liu/ScienceClaw) — 基于 OpenClaw 的 AI 科研团队 / 科研工作流助手。
+| 项目 | 所有者 | ⭐ Stars | I | 图 | 写 | 实验 | R | 简述 |
+|------|-------|---------|---|---|---|-----|---|------|
+| [AgentLaboratory](https://github.com/SamuelSchmidgall/AgentLaboratory) | SamuelSchmidgall | 5.5k | △ | — | ✓ | ✓ | — | 端到端 autonomous research workflow，目标是把你的研究想法落成完整实验与论文。 |
+| [AI-Researcher](https://github.com/HKUDS/AI-Researcher) | HKUDS | 5k | ✓ | — | ✓ | ✓ | — | "Autonomous Scientific Innovation"，仓库里明确分了 `research_agent` 和 `paper_agent`。 |
+| [AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) | SakanaAI | 4.1k | ✓ | — | △ | ✓ | — | 主打 "Workshop-Level Automated Scientific Discovery via Agentic Tree Search"。 |
+| [OmniScientist](https://github.com/tsinghua-fib-lab/OmniScientist) | 清华 FIB Lab | 102 | ✓ | — | ✓ | ✓ | — | AI Scientist ecosystem，覆盖 idea generation、experiment design、paper writing 的整体蓝图。 |
+| [LLM-MM-Agent](https://github.com/usail-hkust/LLM-MM-Agent) | HKUST | 499 | — | ✓ | ✓ | ✓ | — | 数学建模 agent，做问题分析、建模、代码求解、可视化和报告生成。 |
+| [Virtual-Scientists](https://github.com/InternScience/Virtual-Scientists) | InternScience | 129 | ✓ | — | — | — | — | ACL 2025 项目，核心卖点是 many-heads 的 scientific idea generation。 |
+| [MLGym](https://github.com/facebookresearch/MLGym) | Meta FAIR | 593 | — | — | — | — | — | 面向 AI research agents 的统一框架和 benchmark。 |
+| [aira-dojo](https://github.com/facebookresearch/aira-dojo) | Meta FAIR | 136 | — | — | — | △ | — | 可扩展的 AI research agent 开发/评测框架，带隔离代码执行环境，直指 fully automated AI research scientist。 |
+| [airs-bench](https://github.com/facebookresearch/airs-bench) | Meta FAIR | 71 | — | — | — | — | — | 用来量化 LLM agents 端到端 AI research 能力的基准。 |
+| [deep_research_bench](https://github.com/Ayanami0730/deep_research_bench) | Ayanami0730 | 651 | — | — | — | — | — | 面向 deep research agents 的综合 benchmark 和 leaderboard。 |
 
-## 科研助手与工作流工具
+### Deep Research 与框架
 
-帮助研究人员贯穿工作流的交互式助手和工具。
+| 项目 | 所有者 | ⭐ Stars | I | 图 | 写 | 实验 | R | 简述 |
+|------|-------|---------|---|---|---|-----|---|------|
+| [open_deep_research](https://github.com/langchain-ai/open_deep_research) | LangChain | 11k | — | — | ✓ | — | — | 全开源 deep research agent，跨多模型、多搜索 API、多 MCP，内置 final report 生成。 |
+| [DeepResearch](https://github.com/Alibaba-NLP/DeepResearch) | Alibaba-NLP | 18.6k | — | — | △ | — | — | Tongyi Deep Research，当前这批里 star 最高，主打 open-source deep research agent。 |
+| [MiroThinker](https://github.com/MiroMindAI/MiroThinker) | MiroMindAI | 8.4k | — | — | △ | — | — | 面向复杂 research 与 prediction 任务的 deep research agent，BrowseComp 分数很高。 |
+| [MiroFlow](https://github.com/MiroMindAI/miroflow) | MiroMindAI | 2.9k | — | — | — | — | — | 强调 performance-first 的开源 agent 框架，同环境下尽量把不同模型的 agent 表现做满。 |
+| [CognitiveKernel-Pro](https://github.com/Tencent/CognitiveKernel-Pro) | Tencent AI Lab | 505 | — | — | — | △ | — | 腾讯的 Deep Research Agent 框架，同时谈 agent foundation models training。 |
+| [simply](https://github.com/google-deepmind/simply) | Google DeepMind | 511 | ✓ | — | — | ✓ | — | 极简 JAX 研究底座，README 明写可让 agent 读代码、提想法、跑实验、反复迭代。 |
 
-- [ResearchClaw](https://github.com/ymx10086/ResearchClaw) — 完整的 Research OS，含声明/证据图谱、实验追踪、工作流阶段、项目仪表板。
-- [Elicit](https://elicit.com/) — AI 科研助手；自动化文献综述、系统综述、数据提取。
-- [Consensus](https://consensus.app/) — AI 搜索引擎，直接从研究论文中发现洞察。
-- [ResearchRabbit](https://www.researchrabbit.ai/) — "科研版 Spotify"——基于集合的论文发现与 AI 推荐。
-
-## OpenClaw 生态
-
-OpenClaw 大生态中与 ResearchClaw 互补的项目和工具。
-
-- [OpenClaw](https://github.com/openclaw/openclaw) — ResearchClaw 集成的 AI 网关 / 个人助手平台。
-- [Awesome Claws](https://github.com/LHL3341/awesome-claws) — OpenClaw 相关产品、技能、社区和生态资源精选列表。
-- [MetaClaw](https://pypi.org/project/metaclaw/) — 自学习技能系统；AutoResearchClaw 用它从历史运行中学习并提升流水线质量。
-- [ACPX](https://github.com/openclaw/acpx) — Agent Client Protocol——让 AutoResearchClaw 使用任何 ACP 兼容 Agent（Claude、Codex、Copilot、Gemini 等）作为 LLM 后端。
-- [MimicLaw](https://github.com/memovai/mimiclaw) — Claw 生态中的紧凑型助手项目。
-- [EverMemOS](https://github.com/EverMind-AI/EverMemOS) — 7×24 OpenClaw Agent 的长期记忆系统；含 OpenClaw 插件和 Live2D 集成。
+---
 
 ## 技能与插件
 
