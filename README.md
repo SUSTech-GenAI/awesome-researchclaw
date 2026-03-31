@@ -45,6 +45,7 @@ Projects directly related to the OpenClaw ecosystem — core platforms, skill li
 | [OpenClaw-Medical-Skills](https://github.com/FreedomIntelligence/OpenClaw-Medical-Skills) ![Stars](https://img.shields.io/github/stars/FreedomIntelligence/OpenClaw-Medical-Skills?style=flat-square) | FreedomIntelligence | — | △ | △ | △ | — | 869 medical/biomedical skills spanning clinical, genomics, and drug discovery domains. |
 | [ARIS](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) ![Stars](https://img.shields.io/github/stars/wanshuiyin/Auto-claude-code-research-in-sleep?style=flat-square) | wanshuiyin | ✓ | △ | ✓ | ✓ | ✓ | Lightweight Markdown-only research workflow — cross-model review loops, idea discovery, and experiment automation. |
 | [Dr. Claw](https://github.com/OpenLAIR/dr-claw) ![Stars](https://img.shields.io/github/stars/OpenLAIR/dr-claw?style=flat-square) | OpenLAIR | ✓ | △ | ✓ | ✓ | △ | AI research IDE with 100+ skills, structured dashboard (Survey → Ideation → Experiment → Publication), auto-research one-click execution, and multi-agent support (Claude Code / Gemini / Codex). |
+| [sciClaw](https://github.com/drpedapati/sciclaw) ![Stars](https://img.shields.io/github/stars/drpedapati/sciclaw?style=flat-square) | drpedapati | △ | — | ✓ | ✓ | △ | Paired-scientist agent built on PicoClaw runtime — hypothesis-driven loops, literature search, document tools, shell execution, and auditable evidence trail; accessible via Telegram, Discord, or terminal. |
 
 ## Research Agents & AI Scientists
 
