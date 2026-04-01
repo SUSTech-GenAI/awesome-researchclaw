@@ -52,6 +52,7 @@ ResearchClaw 是一个新兴的 AI 科研助手生态系统，涵盖自主论文
 | [ARIS](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) ![Stars](https://img.shields.io/github/stars/wanshuiyin/Auto-claude-code-research-in-sleep?style=flat-square) | wanshuiyin | ✓ | △ | ✓ | ✓ | ✓ | ARIS：纯 Markdown 的轻量研究工作流，主打 cross-model review、idea discovery、experiment automation。 |
 | [Dr. Claw](https://github.com/OpenLAIR/dr-claw) ![Stars](https://img.shields.io/github/stars/OpenLAIR/dr-claw?style=flat-square) | OpenLAIR | ✓ | △ | ✓ | ✓ | △ | AI 科研 IDE，内置 100+ 技能，结构化仪表板（Survey → Ideation → Experiment → Publication），一键自动科研，支持多 Agent（Claude Code / Gemini / Codex）。 |
 | [sciClaw](https://github.com/drpedapati/sciclaw) ![Stars](https://img.shields.io/github/stars/drpedapati/sciclaw?style=flat-square) | drpedapati | △ | — | ✓ | ✓ | △ | 基于 PicoClaw 运行时的"配对科学家"agent，支持假设驱动循环、文献检索、文档处理、Shell 执行和可审计的证据轨迹；可通过 Telegram、Discord 或终端访问。 |
+| [AI-Research-SKILLs](https://github.com/Orchestra-Research/AI-Research-SKILLs) ![Stars](https://img.shields.io/github/stars/Orchestra-Research/AI-Research-SKILLs?style=flat-square) | Orchestra-Research | ✓ | △ | ✓ | ✓ | △ | 87 个面向自主 AI 科研的技能库——双循环 autoresearch 编排（内层实验循环 + 外层综合循环）、研究构思、ML 论文写作（含 NeurIPS/ICML/ICLR/ACL/AAAI/COLM LaTeX 模板），以及训练、微调、评测、推理、可解释性等领域技能；一键安装：`npx @orchestra-research/ai-research-skills`。 |
 
 ### 通用 Research Agent / AI Scientist
 
