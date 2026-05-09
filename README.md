@@ -30,6 +30,7 @@ Projects directly related to the OpenClaw ecosystem — core platforms, skill li
 
 | Project | Owner | I | Fig | Write | Exp | R | Description |
 |---------|-------|---|-----|-------|-----|---|-------------|
+| [Suppr](https://suppr.wilddata.cn/) | WildDataX | — | △ | ✓ | ✓ | △ | AI literature search, document translation, and deep-research platform with PubMed/OpenAlex search and Zotero plugin workflow. |
 | [AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) ![Stars](https://img.shields.io/github/stars/aiming-lab/AutoResearchClaw?style=flat-square) | aiming-lab | △ | ✓ | ✓ | ✓ | ✓ | 23-stage idea → paper pipeline with auto LaTeX, citation verification, experiments, figures, and multi-agent peer review. |
 | [ResearchClaw](https://github.com/ymx10086/ResearchClaw) ![Stars](https://img.shields.io/github/stars/ymx10086/ResearchClaw?style=flat-square) | ymx10086 | — | △ | ✓ | ✓ | — | Local-first Research OS with claims/evidence graph, experiment tracking, paper management, skills, and multi-channel access. |
 | [Research Claw](https://github.com/nanoAgentTeam/research-claw) ![Stars](https://img.shields.io/github/stars/nanoAgentTeam/research-claw?style=flat-square) | nanoAgentTeam | — | — | ✓ | — | — | Self-hosted academic assistant — paper management, literature search, deadline tracking, and LaTeX/Overleaf sync. |
