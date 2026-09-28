@@ -26,6 +26,7 @@ ResearchClaw is an emerging ecosystem of AI-powered research assistants, autonom
 
 ## OpenClaw Ecosystem & Research Tools
 
+- [Yila AI](https://yila.ai) — Evidence-traceable research agent for literature review, PDF analysis, figures, and academic slides.
 Projects directly related to the OpenClaw ecosystem — core platforms, skill libraries, plugins, and curated lists.
 
 | Project | Owner | I | Fig | Write | Exp | R | Description |
