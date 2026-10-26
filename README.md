@@ -13,6 +13,7 @@ ResearchClaw is an emerging ecosystem of AI-powered research assistants, autonom
 - [OpenClaw Ecosystem & Research Tools](#openclaw-ecosystem--research-tools)
 - [Research Agents & AI Scientists](#research-agents--ai-scientists)
 - [Deep Research & Frameworks](#deep-research--frameworks)
+- [Computational Experiment Tools](#computational-experiment-tools)
 - [📖 Papers](#-papers)
   - [A. Core Papers — End-to-End Research / Experiments / Benchmarks](#a-core-papers--end-to-end-research--experiments--benchmarks)
   - [B. Adjacent Papers — Literature Agents / Surveys / Reproduction](#b-adjacent-papers--literature-agents--surveys--reproduction)
@@ -84,6 +85,12 @@ Deep research agents and foundational frameworks for agent-driven scientific exp
 | [MiroFlow](https://github.com/MiroMindAI/miroflow) ![Stars](https://img.shields.io/github/stars/MiroMindAI/miroflow?style=flat-square) | MiroMindAI | — | — | — | — | — | Performance-first open-source agent framework — #1 on 5+ benchmarks, supports MiroThinker, Claude, Kimi, OpenAI. |
 | [CognitiveKernel-Pro](https://github.com/Tencent/CognitiveKernel-Pro) ![Stars](https://img.shields.io/github/stars/Tencent/CognitiveKernel-Pro?style=flat-square) | Tencent | — | — | — | △ | — | Tencent's deep research agent framework with agent foundation model training. |
 | [Simply](https://github.com/google-deepmind/simply) ![Stars](https://img.shields.io/github/stars/google-deepmind/simply?style=flat-square) | google-deepmind | ✓ | — | — | ✓ | — | Minimal JAX research codebase — designed for agents to read code, propose ideas, run experiments, and iterate. |
+
+## Computational Experiment Tools
+
+Domain-specific tools for running and checking numerical experiments with an AI assistant or scripts.
+
+- [AgentFEM](https://github.com/haoming-luo/agentfem) — Runs local FEniCSx finite-element experiments from editable models, with CLI checks, result inspection, and verification workflows. ![Stars](https://img.shields.io/github/stars/haoming-luo/agentfem?style=flat-square) ![Last Commit](https://img.shields.io/github/last-commit/haoming-luo/agentfem?style=flat-square)
 
 ## 📖 Papers
 

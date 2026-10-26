@@ -14,6 +14,7 @@ ResearchClaw 是一个新兴的 AI 科研助手生态系统，涵盖自主论文
   - [OpenClaw 生态与科研工具](#openclaw-生态与科研工具)
   - [通用 Research Agent / AI Scientist](#通用-research-agent--ai-scientist)
   - [Deep Research 与框架](#deep-research-与框架)
+- [计算实验工具](#计算实验工具)
 - [📖 论文](#-论文)
   - [A. 核心论文——全自动科研 / 自动实验 / Benchmark](#a-核心论文全自动科研--自动实验--benchmark)
   - [B. 相邻论文——文献综述 / Survey / 复现](#b-相邻论文文献综述--survey--复现)
@@ -80,6 +81,12 @@ ResearchClaw 是一个新兴的 AI 科研助手生态系统，涵盖自主论文
 | [MiroFlow](https://github.com/MiroMindAI/miroflow) ![Stars](https://img.shields.io/github/stars/MiroMindAI/miroflow?style=flat-square) | MiroMindAI | — | — | — | — | — | 强调 performance-first 的开源 agent 框架，同环境下尽量把不同模型的 agent 表现做满。 |
 | [CognitiveKernel-Pro](https://github.com/Tencent/CognitiveKernel-Pro) ![Stars](https://img.shields.io/github/stars/Tencent/CognitiveKernel-Pro?style=flat-square) | Tencent | — | — | — | △ | — | 腾讯的 Deep Research Agent 框架，同时谈 agent foundation models training。 |
 | [simply](https://github.com/google-deepmind/simply) ![Stars](https://img.shields.io/github/stars/google-deepmind/simply?style=flat-square) | google-deepmind | ✓ | — | — | ✓ | — | 极简 JAX 研究底座，README 明写可让 agent 读代码、提想法、跑实验、反复迭代。 |
+
+## 计算实验工具
+
+供 AI 助手或脚本调用的专业计算工具，用于执行数值实验、检查计算结果。
+
+- [AgentFEM](https://github.com/haoming-luo/agentfem) — 基于 FEniCSx 的本地有限元工具，支持编辑模型、命令行检查与求解、结果查看及验证。 ![Stars](https://img.shields.io/github/stars/haoming-luo/agentfem?style=flat-square) ![Last Commit](https://img.shields.io/github/last-commit/haoming-luo/agentfem?style=flat-square)
 
 ## 📖 论文
 
